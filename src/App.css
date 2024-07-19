@@ -1,3 +1,9 @@
+/* Ensuring elements don't overflow */
+* {
+  box-sizing: border-box;
+}
+
+/* Existing styles */
 .App {
   text-align: center;
 }
@@ -34,5 +40,61 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Universal selector to apply box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensuring the body and html take the full viewport size */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Main container or wrapper styles */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust based on your design */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Example of a header style */
+header {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Example of a main content style */
+main {
+  padding: 20px;
+}
+
+/* Example of a footer style */
+footer {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
   }
 }

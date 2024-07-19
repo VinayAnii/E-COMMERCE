@@ -1,0 +1,95 @@
+.hero{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.hero-left{
+    /* flex: 1; */
+    display: flex;
+    /* background-color: green; */
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 140px;
+    line-height: 1.1;   
+}
+.hero-left h2{
+    color: #26a2ef;
+    font-size: 25px;
+    font-weight: 600;
+}
+.hero-left p{
+    color: #171717;
+    font-size: 45px;
+    font-weight: 700;
+}
+.hero-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-hand-icon img{
+    width: 75px;
+}
+/* .hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    gap: 15px;
+    height: 50px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background-color: white; 
+    color: orange;
+    font-size: 13px;
+    font-weight: 500;
+    border: 3px solid black; 
+} */
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    gap: 15px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 30px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: white; /* Text color white */
+    font-size: 14px;
+    font-weight: 600; /* Increased font weight */
+    border: none; /* Remove border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.hero-latest-btn:hover {
+    background: linear-gradient(90deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhance box shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.arrow-image {
+    width: 20px;
+    height: 20px;
+}
+
+
+.arrow-image{
+    height: 25px;
+    
+}
+.hero-right{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin-top: 70px;
+
+}
